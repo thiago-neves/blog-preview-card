@@ -97,6 +97,21 @@ article {
   font-weight: 900;
 }
 
+.attribution {
+  right: 5px;
+  bottom: 5px;
+  z-index: -1;
+  position: fixed;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.attribution a {
+  color: var(--gray-500);
+}
+
 @media screen and (min-width: 768px) {
   article {
     width: 336px;
