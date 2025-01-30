@@ -52,6 +52,7 @@ body {
 .card {
   display: grid;
   gap: var(--sp-200);
+  outline-offset: -1px;
   margin: var(--sp-200);
   padding: var(--sp-200);
   border-radius: var(--rd-200);
