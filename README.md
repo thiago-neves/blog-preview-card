@@ -17,7 +17,7 @@ Users should be able to:
 
 ## Screenshot
 
-![](./preview.jpg)
+![](./design/desktop-design.jpg)
 
 ## Links
 

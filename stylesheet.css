@@ -1,0 +1,129 @@
+:root {
+  /* Colors */
+  --clr-primary-400: hsl(47, 88%, 63%);
+  --clr-neutral-500: hsl(0, 0%, 42%);
+  --clr-neutral-950: hsl(0, 0%, 7%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  /* Spacing */
+  --sp-50: 0.25rem;
+  --sp-100: 0.5rem;
+  --sp-150: 0.75rem;
+  --sp-200: 1.5rem;
+
+  /* Font-size */
+  --fs-default: 0.875rem;
+  --fs-small: 0.75rem;
+  --fs-large: 1.25rem;
+
+  /* Line height */
+  --ln-default: 1.5;
+
+  /* Letter spacing */
+  --ls-default: 0;
+
+  /* Font family */
+  --ff-sans-normal: "Figtree", sans-serif;
+
+  /* Radius */
+  --rd-50: 0.25rem;
+  --rd-100: 0.625rem;
+  --rd-200: 1.25rem;
+
+  /* Font weight */
+  --fw-medium: 500;
+  --fw-extrabold: 800;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100dvh;
+  place-items: center;
+  color: var(--clr-neutral-950);
+  line-height: var(--ln-default);
+  letter-spacing: var(--ls-default);
+  font-family: var(--ff-sans-normal);
+  background-color: var(--clr-primary-400);
+}
+
+.card {
+  display: grid;
+  gap: var(--sp-200);
+  margin: var(--sp-200);
+  padding: var(--sp-200);
+  border-radius: var(--rd-200);
+  background-color: var(--clr-white);
+  box-shadow: 8px 8px 0 var(--clr-black);
+  outline: 1px solid var(--clr-neutral-950);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1.395;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--rd-100);
+  background-image: url("./assets/images/illustration-article.svg");
+}
+
+.content {
+  display: grid;
+  gap: var(--sp-150);
+  font-size: var(--fs-small);
+}
+
+.category {
+  width: fit-content;
+  border-radius: var(--rd-50);
+  font-weight: var(--fw-extrabold);
+  padding: var(--sp-50) var(--sp-150);
+  background-color: var(--clr-primary-400);
+}
+
+.title {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-extrabold);
+}
+
+.description {
+  font-size: var(--fs-default);
+  color: var(--clr-neutral-500);
+}
+
+.author {
+  display: flex;
+  gap: var(--sp-150);
+  align-items: center;
+  font-size: var(--fs-default);
+  font-weight: var(--fw-extrabold);
+}
+
+.author img {
+  width: 32px;
+  aspect-ratio: 1;
+}
+
+::selection {
+  color: var(--clr-white);
+  background-color: var(--clr-primary-400);
+}
+
+@media only screen and (min-width: 37rem) {
+  :root {
+    --fs-large: 1.5rem;
+    --fs-default: 1rem;
+    --fs-small: 0.875rem;
+  }
+
+  .card {
+    max-width: 24rem;
+  }
+
+  .image {
+    height: 200px;
+    aspect-ratio: auto;
+  }
+}
