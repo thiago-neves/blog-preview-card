@@ -41,6 +41,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   place-items: center;
+  font-weight: var(--fw-medium);
   color: var(--clr-neutral-950);
   line-height: var(--ln-default);
   letter-spacing: var(--ls-default);
@@ -125,5 +126,9 @@ body {
   .image {
     height: 200px;
     aspect-ratio: auto;
+  }
+
+  .author p {
+    font-size: var(--fs-small);
   }
 }
