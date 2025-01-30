@@ -47,9 +47,12 @@ h6 {
 }
 
 /* 8. Improve line wrapping */
+
+/* Chrome and firefox inconsistency
 p {
   text-wrap: pretty;
-}
+} */
+
 h1,
 h2,
 h3,
