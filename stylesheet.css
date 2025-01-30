@@ -56,7 +56,7 @@ body {
   border-radius: var(--rd-200);
   background-color: var(--clr-white);
   box-shadow: 8px 8px 0 var(--clr-black);
-  outline: 1px solid var(--clr-neutral-950);
+  outline: thin inset var(--clr-neutral-950);
 }
 
 .image {
